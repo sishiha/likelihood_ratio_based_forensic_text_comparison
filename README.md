@@ -38,15 +38,16 @@ The following libraries are required for the ML system:
 
 This repository works with Amazon Database. The downloaded database which consists of 5 iterations x 5 batches (25 files) should be stored in 'amazon database' directory for the DL system. The feature values extracted from the database should be placed in 'amazon_database_feature_extracted' directory for the ML system.
 
-# Directory structure
+# Directory structure (DL)
 
  * DL system
 
- * ML system
+# Directory structure (ML)
 
 The zipped file 'ml.zipped' consists of the following three directories:
  * amazon_database_feature_extracted
  * ml_experiment_outcome
  * src
+ ** xxx  
 
 
