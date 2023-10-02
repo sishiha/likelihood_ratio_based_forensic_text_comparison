@@ -61,7 +61,7 @@ You can train the DL system as shown below:
 
     training.csh
 
-The above shell script, which is stored in 'execute' directory, runs 'model_roberta_self_attention_modified.py' stored in 'src' directory. The trained model should appear in 'trained_models' directory.
+The above shell script, which is stored in 'execute' directory, runs 'model_roberta_self_attention_modified.py' stored in 'src' directory. The trained model should appear in 'trained_models' directory. [A trained model (save_data_ite2_token500.zip)](https://www.dropbox.com/scl/fi/j24wami62xmyg6s1c40au/save_data_Ite2_token500.zip?rlkey=dnv1p4y51ji37f52d9m76kgwn&dl=0) can be downloaded. Due to the limitation of space, only one trained model is available. Please contact the repository owner for a full set of models.
 
 You can carry a series of experiments by excecuting the following shell script which can be found in 'excecute' directory.
 
@@ -84,7 +84,7 @@ All experimental results are stored in 'ml_experiment_outcome' directory.
 
 # Comparisons
 
-The performance differences between the DL and ML systems using the four metrics.
+The performance differences between the DL and ML systems using the four metrics can be seen in the following table. The table includes the fused resuts between the ML and DL systems.
 
 |       |  cllr  | cllr_min |  cllr_cal |   EER   |
 |:-----:|:------:|:--------:|:---------:|:-------:|
