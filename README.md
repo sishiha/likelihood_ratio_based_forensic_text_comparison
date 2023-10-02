@@ -1,6 +1,10 @@
 # Likelihood ratio based forensic text comparison systems
 
-Two types of likelihood ratio (LR)-based forensic text comparison systems are available in this repository. One is based on a deep learning (DL) approach and the other is on a machine learning (ML) approach. This repository contains the source codes used in the paper presented at the 16th Biennial Conference of the International Association for Forensic & Legal Linguistics. The title of the paper is [ Estimating Likelihood Ratios for Authorship Evidence with a Deep-learning-based Text Representation ](https://www.dropbox.com/scl/fi/bbg49qyudnze4g5yaqa2z/iafll16_ml_dl_and_ftc.pptx?rlkey=f9yibkev6d1ncazpd35lwnj4o&dl=0). In this study, these two systems are compared at first, and then the results are fused.
+Two types of likelihood ratio (LR)-based forensic text comparison systems are available in this repository. One is based on a deep learning (DL) approach and the other is on a machine learning (ML) approach. This repository contains the source codes used in the study presented at the 16th Biennial Conference of the International Association for Forensic & Legal Linguistics. The title of the paper is [Estimating Likelihood Ratios for Authorship Evidence with a Deep-learning-based Text Representation](https://www.dropbox.com/scl/fi/bbg49qyudnze4g5yaqa2z/iafll16_ml_dl_and_ftc.pptx?rlkey=f9yibkev6d1ncazpd35lwnj4o&dl=0). In this study, these two systems are compared at first, and then the results are fused.
+
+The pipeline for calculating LRs is given below:
+
+
 
 # Installation
 
