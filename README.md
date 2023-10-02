@@ -18,3 +18,19 @@ Python 3.7 was used
   * conda create -n IbnA pip python=3.7
   * conda activate IbnA
 
+The following libraries are required for the ML system:
+
+ * library(fitdistrplus)
+ * library(stylo)
+ * library(actuar)
+ * library(StatMatch)
+ * library(MASS)
+ * library(ROCR)
+ * library(stats)
+ * library(ROC)
+ * library(MGLM)
+ * library(usedist)
+ * library(dirichlet)
+ * library(Compositional)
+ * library(MGLM)
+
