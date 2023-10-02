@@ -2,6 +2,8 @@
 
 Two types of likelihood ratio (LR)-based forensic text comparison systems are available in this repository. One is based on a deep learning (DL) approach and the other is on a machine learning (ML) approach. This repository contains the source codes used in the study presented at the 16th Biennial Conference of the International Association for Forensic & Legal Linguistics. The title of the paper is [Estimating Likelihood Ratios for Authorship Evidence with a Deep-learning-based Text Representation](https://www.dropbox.com/scl/fi/bbg49qyudnze4g5yaqa2z/iafll16_ml_dl_and_ftc.pptx?rlkey=f9yibkev6d1ncazpd35lwnj4o&dl=0). In this study, these two systems are compared at first, and then the results are fused.
 
+Please feel free to send any comments or suggestions! (shunichi.ishihara[at]anu.edu.au)
+
 The pipeline of the DL system for calculating LRs is given below:
 
  <img src="pipeline_dl.jpg" width="800" class="center">
@@ -61,9 +63,9 @@ You can train the DL system as shown below:
 
     training.csh
 
-The above shell script, which is stored in 'execute' directory, runs 'model_roberta_self_attention_modified.py' stored in 'src' directory. The trained model should appear in 'trained_models' directory. [A trained model (save_data_ite2_token500.zip)](https://www.dropbox.com/scl/fi/j24wami62xmyg6s1c40au/save_data_Ite2_token500.zip?rlkey=dnv1p4y51ji37f52d9m76kgwn&dl=0) can be downloaded. Due to the limitation of space, only one trained model is available. Please contact the repository owner for a full set of models.
+The above shell script, which is stored in 'execute' directory, runs 'model_roberta_self_attention_modified.py' stored in 'src' directory. The trained model should appear in 'trained_models' directory. [A trained model (save_data_ite2_token500.zip)](https://www.dropbox.com/scl/fi/j24wami62xmyg6s1c40au/save_data_Ite2_token500.zip?rlkey=dnv1p4y51ji37f52d9m76kgwn&dl=0) can be downloaded. Due to the limitation of space, only one trained model is available here. Please contact the repository owner for a full set of models.
 
-You can carry a series of experiments by excecuting the following shell script which can be found in 'excecute' directory.
+You can carry out a series of experiments by excecuting the following shell script which can be found in 'excecute' directory.
 
     evaluation.csh
 
@@ -84,7 +86,7 @@ All experimental results are stored in 'ml_experiment_outcome' directory.
 
 # Comparisons
 
-The performance differences between the DL and ML systems using the four metrics can be seen in the following table. The table includes the fused resuts between the ML and DL systems.
+The differences in performance between the DL and ML systems using the four metrics can be seen in the following table. The table also includes the fused results between the ML and DL systems.
 
 |       |  cllr  | cllr_min |  cllr_cal |   EER   |
 |:-----:|:------:|:--------:|:---------:|:-------:|
