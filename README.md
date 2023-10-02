@@ -1,6 +1,6 @@
-# Likelihood ratio based forensic text comparison system
+# Likelihood ratio based forensic text comparison systems
 
-Two types of likelihood ratio (LR)-based forensic text comparison systems are available. One is based on a deep learning (DL) approach and the other is on a machine learning (ML) approach. This repository contains the source code used in the paper presented at the 16th Biennial Conference of the International Association for Forensic & Legal Linguistics. The title of the paper is "Estimating Likelihood Ratios for Authorship Evidence with a Deep-learning-based Text Representation".
+Two types of likelihood ratio (LR)-based forensic text comparison systems are available in this repository. One is based on a deep learning (DL) approach and the other is on a machine learning (ML) approach. This repository contains the source codes used in the paper presented at the 16th Biennial Conference of the International Association for Forensic & Legal Linguistics. The title of the paper is "Estimating Likelihood Ratios for Authorship Evidence with a Deep-learning-based Text Representation". In this study, these two systems are compared at first, and then the results are fused.
 
 # Installation
 
@@ -40,14 +40,34 @@ This repository works with Amazon Database. The downloaded database which consis
 
 # Directory structure (DL)
 
- * DL system
+The zipped file 'dl.zip' contains the following directories:
+* amazon_database
+* evaluation
+* execute
+* src
+* trained_models
+
+You can train the DL system as shown below:
+
+    training.csh
+
+The above shell script, which is stored in 'execute' directory, runs 'model_roberta_self_attention_modified.py' stored in 'src' directory. The trained model should appear in 'trained_models' directory.
+
+You can carry a series of experiments by excecuting the following shell script which can be found in 'excecute' directory.
+
+    evaluation.csh
+
+All experimental results should appear in 'evaluation' directory.
 
 # Directory structure (ML)
 
-The zipped file 'ml.zipped' consists of the following three directories:
+The zipped file 'ml.zip' consists of the following three directories:
  * amazon_database_feature_extracted
  * ml_experiment_outcome
  * src
- ** xxx  
 
+You can run a series of experiments using the following code which is stored in 'src' directory. The lines 11-15 are for setting experimental conditions.
 
+    batch_experiment.R
+
+All experimental results are stored in 'ml_experiment_outcome' directory.
