@@ -8,11 +8,11 @@ The DL system was written in Python and the ML system was built using R.
 
 The following libraries are required for the DL system:
 
-transformers==4.4
-torch==1.7
-pandas
-sklearn
-torchinfo
+  transformers==4.4
+  torch==1.7
+  pandas
+  sklearn
+  torchinfo
 
 Python 3.7 was used
 conda create -n IbnA pip python=3.7
