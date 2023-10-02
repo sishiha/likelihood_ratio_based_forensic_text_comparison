@@ -44,7 +44,9 @@ The following libraries are required for the ML system:
 
 # Dataset
 
-This repository works with Amazon Database. The downloaded database which consists of 5 iterations x 5 batches (25 files) should be stored in 'amazon database' directory for the DL system. The feature values extracted from the database should be placed in 'amazon_database_feature_extracted' directory for the ML system.
+This repository works with Amazon Database. [The downloaded database (amazon_database.zip)](https://www.dropbox.com/scl/fi/9uogjxl863wxk24ubgek1/amazon_database.zip?rlkey=6r2oh8tt3d01cfrhbrqtfqmsk&dl=0) which consists of 5 iterations x 5 batches (25 files) should be stored in 'amazon database' directory for the DL system. 
+
+[The feature values extracted from the database ('amazon_database_feature_extracted.zip')](https://www.dropbox.com/scl/fi/wx579mjxihz0x72n800la/amazon_database_feature_extracted.zip?rlkey=lxt9v5grplqgirizmljshpd57&dl=0) should be placed in 'amazon_database_feature_extracted' directory for the ML system.
 
 # Directory structure (DL)
 
@@ -79,3 +81,14 @@ You can run a series of experiments using the following code which is stored in 
     batch_experiment.R
 
 All experimental results are stored in 'ml_experiment_outcome' directory.
+
+# Comparisons
+
+The performance differences between the DL and ML systems using the four metrics.
+
+|       |  cllr  | cllr_min |  cllr_cal |   EER   |
+|:-----:|:------:|:--------:|:---------:|:-------:|
+| ML    | 0.48560| 0.46017  |  0.02543  | 0.13754 |
+| DL    |0.47439 | 0.46281  |  0.01158  | 0.13725 |
+| Fused |0.34794 | 0.32483  |  0.02310  | 0.09528 |
+
